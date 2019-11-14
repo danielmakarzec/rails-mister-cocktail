@@ -1,0 +1,7 @@
+<h2>dew doses</h2>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient%>
+  <%= f.button :submit %>
+<% end %>
+<!-- f.input :ingredient, placeholder: 'italian', error: 'Not a valid option', collection: ["chinese", "italian", "japanese", "french", "belgian"] %> -->
