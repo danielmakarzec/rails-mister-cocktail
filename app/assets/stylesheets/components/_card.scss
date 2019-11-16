@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 300px;
+  width: 200px;
+  // look
+  background: $deep-dark;
+  background: radial-gradient(ellipse at center, rgb(20,20,20) 0%, rgb(30,30,30) 100%);
+
+  border: 0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: -8px 4px 18px 10px rgba(black, 0.2);
+  transition: 0.4s;
+
+  p {
+    color: $main;
+  }
+}
+
+.card:hover i {
+  transform: translateX(70px);
+}
+.card:not(:last-child):hover,
+.card:not(:last-child):focus-within {
+  transform: translateY(-1rem);
+  ~ .card {
+    transform: translateX(2rem);
+  }
+}
+.card:last-child:hover {
+  transform: translateY(-1rem);
+}
+.card:last-child p {
+  font-size: 48px;
+}
+#link_to_show {
+  flex-grow: 1;
+}

@@ -1,10 +1,25 @@
-<h3><%= @cocktail.name %></h3>
-<strong>ingredients </strong><%= link_to 'add more', new_cocktail_dose_path(@cocktail) %>
-<% @doses.each do |d| %>
-<p>
-  <span><%= d.description %></span>
-  <span><%= d.ingredient.name %></span>
-  <%= link_to 'delete', dose_path(d), method: :delete %>
-</p>
-<% end %>
-<%= link_to 'Back', cocktails_path %>
+<div class="cocktail-wraper d-flex justify-content-center align-items-center">
+  <div class="single-cocktail w-100 d-flex flex-column justify-content-around">
+    <h1 id="show-header" class="text-center"><%= @cocktail.name %></h1>
+    <div class="d-flex justify-content-center">
+      <% @doses.each do |d| %>
+        <p class="d-flex flex-column align-items-center">
+          <span><%= d.description %></span>
+          <span class="px-3"><%= d.ingredient.name %></span>
+<!-- delete button -->
+          <%= link_to dose_path(d), method: :delete, :class => 'edit delete text-warning mt-3' do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'back', cocktails_path, :class => "btn btn-warning fixed-bottom edit my_toggle"%>
+<%= link_to 'add more', new_cocktail_dose_path(@cocktail), :class => 'bigger btn btn-warning fixed-bottom edit' %>
+<button type="button" class="edit-btn btn btn-warning fixed-top">
+  <strong>Edit me! &nbsp</strong><i class="fas fa-pencil-alt"></i>
+
+</button>
+

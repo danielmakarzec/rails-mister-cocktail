@@ -15,4 +15,16 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
+
+// --- cards nature ---
+
+
+
+// --- edit mode ---
+const edit = document.querySelectorAll('.edit');
+const editBtn = document.querySelector('.edit-btn');
+editBtn.addEventListener('click', () => {
+  edit.forEach((e) => {
+    e.classList.toggle("my_toggle");
+  });
+});

@@ -1,0 +1,9 @@
+.delete {
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: .4s;
+
+  &:hover {
+    transform: translate(-1px, 0px) rotate(-5deg);
+  }
+}

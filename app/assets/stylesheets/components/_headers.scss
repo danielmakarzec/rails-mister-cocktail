@@ -1,0 +1,19 @@
+h1 {
+  font-size: 66px;
+  letter-spacing: 24px;
+  font-family: 'Poiret One', cursive;
+}
+#index-header {
+  color: $gray;
+  padding: 40px 0 0 0;
+}
+#show-header {
+  color: $light-gray;
+}
+
+// --- secondary headers
+
+h2 {
+  font-weight: 300;
+  color: $main;
+}

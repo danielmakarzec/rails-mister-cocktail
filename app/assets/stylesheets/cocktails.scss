@@ -1,0 +1,14 @@
+body {
+  background: rgb(0,0,0);
+  background: linear-gradient(to top right, rgb(0,0,0) 0%, rgb(30,30,30) 50%, rgb(0,0,0) 100%);
+}
+
+// footer
+.card i {
+  color: $gray;
+}
+footer {
+  height: 60px;
+  text-align: center;
+  color: $gray;
+}

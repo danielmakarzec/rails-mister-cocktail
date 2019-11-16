@@ -1,4 +1,8 @@
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <div class="form d-flex justify-content-center align-items-center">
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.button :submit, :class => 'form-button' %>
+    <% end %>
+  </div>
+</div>
