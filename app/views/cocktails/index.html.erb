@@ -7,6 +7,8 @@
           <!-- show link -->
           <%= link_to cocktail_path(c), :id => 'link_to_show' do %>
             <h2><%= c.name %></h2>
+
+
           <% end %>
 
           <!-- delete button -->
@@ -23,7 +25,7 @@
     </div>
 
   <!-- footer -->
-  <footer class="justify-content-center">
+  <footer class="justify-content-center ">
     &copy; Copyright -- mr-cocktails-318@cocktailcity.com
   </footer>
 
@@ -31,9 +33,6 @@
     const cardsElem = document.querySelector('.cards');
     const cards = document.querySelectorAll('.card');
     const overlap = (((cards.length + 1) * 200) + 200 - document.documentElement.clientWidth)/(cards.length + 1);
-    // console.log(document.documentElement.clientWidth);
-    // console.log(window.  innerWidth);
-    // console.log(cards.length);
     cards.forEach((card) => {
       card.style.marginLeft = -overlap+'px';
     });

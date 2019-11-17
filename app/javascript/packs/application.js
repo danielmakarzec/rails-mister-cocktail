@@ -15,16 +15,23 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-
-// --- cards nature ---
-
-
-
 // --- edit mode ---
+const nameToggle = () => {
+  const b = document.querySelector('.edit-btn');
+  const icon = '<i class="fas fa-pencil-alt"></i>';
+  if (b.innerText == "Edit me!  ") {
+    b.innerHTML = "<strong>Exit Edit Mode</strong>";
+  } else {
+    b.innerHTML = "<strong>Edit me!  </strong>";
+    b.insertAdjacentHTML("beforeend", icon);
+  }
+};
+
 const edit = document.querySelectorAll('.edit');
 const editBtn = document.querySelector('.edit-btn');
 editBtn.addEventListener('click', () => {
   edit.forEach((e) => {
     e.classList.toggle("my_toggle");
   });
+  nameToggle();
 });

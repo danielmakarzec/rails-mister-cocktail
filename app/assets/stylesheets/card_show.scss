@@ -1,7 +1,7 @@
 .cocktail-wraper {
   width: 100%;
   height: 100%;
-  background-image: url('https://source.unsplash.com/1600x900/?cocktail');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?cocktail');
   background-repeat: none;
   background-size: cover;
   border: 8px solid #fd8804;

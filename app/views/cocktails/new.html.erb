@@ -2,6 +2,7 @@
   <div class="form d-flex justify-content-center align-items-center">
     <%= simple_form_for @cocktail do |f| %>
       <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
       <%= f.button :submit, :class => 'form-button' %>
     <% end %>
   </div>
