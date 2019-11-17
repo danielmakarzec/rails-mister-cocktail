@@ -1,7 +1,8 @@
 .cocktail-wraper {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?cocktail');
+  // background-image: url('<%= cl_image_path @cocktail.photo.key, width: 100%, crop: :fill %>');
+
   background-repeat: none;
   background-size: cover;
   border: 8px solid #fd8804;
@@ -14,6 +15,10 @@
     font-size: 1.4em;
     padding: 0 8px;
     color: #ddd;
+
+    &:first-child {
+      font-size: 1em;
+    }
   }
 }
 .bigger {

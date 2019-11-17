@@ -1,4 +1,4 @@
-<div class="cocktail-wraper d-flex justify-content-center align-items-center">
+<div class="cocktail-wraper d-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, :gravity=>"auto", :crop=>"fill" %>')">
   <div class="single-cocktail w-100 d-flex flex-column justify-content-around">
     <h1 id="show-header" class="text-center"><%= @cocktail.name %></h1>
     <div class="d-flex justify-content-center">

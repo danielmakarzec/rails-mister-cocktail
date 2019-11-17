@@ -29,13 +29,14 @@
     &copy; Copyright -- mr-cocktails-318@cocktailcity.com
   </footer>
 
-  <script>
-    const cardsElem = document.querySelector('.cards');
-    const cards = document.querySelectorAll('.card');
-    const overlap = (((cards.length + 1) * 200) + 200 - document.documentElement.clientWidth)/(cards.length + 1);
-    cards.forEach((card) => {
-      card.style.marginLeft = -overlap+'px';
-    });
-    cardsElem.style.marginLeft = overlap/2+'px';
-  </script>
 </div>
+<!-- card behaviour -->
+<script>
+  const cardsElem = document.querySelector('.cards');
+  const cards = document.querySelectorAll('.card');
+  const overlap = (((cards.length + 1) * 200) + 300 - document.documentElement.clientWidth)/(cards.length + 1);
+  cards.forEach((card) => {
+    card.style.marginLeft = -overlap+'px';
+  });
+  cardsElem.style.marginLeft = overlap/2+'px';
+</script>
