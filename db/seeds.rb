@@ -32,4 +32,4 @@
 # Ingredient.create!(name: 'lemon')
 # Ingredient.create!(name: 'orange')
 # Ingredient.create!(name: 'cream')
-Ingredient.create!(name: 'prosecco')
+# Ingredient.create!(name: 'prosecco')
