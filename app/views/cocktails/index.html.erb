@@ -7,14 +7,13 @@
           <!-- show link -->
           <%= link_to cocktail_path(c), :id => 'link_to_show' do %>
             <h2><%= c.name %></h2>
-
-
           <% end %>
 
           <!-- delete button -->
-          <%= link_to cocktail_path(c), method: :delete, :class => 'delete' do %>
+          <%= button_to cocktail_path(c), method: :delete, :class => 'delete' do %>
             <i class="far fa-trash-alt"></i>
-            <% end %>
+          <% end %>
+
         </div>
       <% end %>
       <%= link_to new_cocktail_path do %>
