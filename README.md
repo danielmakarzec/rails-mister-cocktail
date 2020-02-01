@@ -1,24 +1,10 @@
-# README
+# MR Cocktail
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p>Ruby / JavaScript / SCSS</p>
+<h3>Framework:</h3>
 
-Things you may want to cover:
+<pre>"Ruby on Rails": "5.2.4.1"</pre>
 
-* Ruby version
+<h3>DEMO</h3>
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://mr-cocktail-318.herokuapp.com
